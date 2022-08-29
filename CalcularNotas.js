@@ -14,7 +14,11 @@ console.log(`Notas de CINQUENTA utilizadas - ${cinquenta}`)
 CalcularNotasDez()
 console.log(`Notas de DEZ utilizadas - ${dez}`)
 
+CalcularNotasCinco()
+console.log(`Notas de CINCO utilizadas - ${cinco}`)
 
+CalcularNotasUm()
+console.log(`Notas de UM utilizadas - ${um}`)
 
 
 function CalcularNotasCem(num1){
@@ -29,5 +33,14 @@ function CalcularNotasCinquenta(){
 
 function CalcularNotasDez(){
     dez = parseInt(sobraDez/10)
-    return sobraCinco = sobraCinquenta - (50*cinquenta)
+    return sobraCinco = sobraDez - (10*dez)
+}
+
+function CalcularNotasCinco(){
+    cinco = parseInt(sobraCinco/5)
+    return sobraUm = sobraCinco - (5*cinco)
+}
+
+function CalcularNotasUm(){
+    um = parseInt(sobraUm/1)
 }
