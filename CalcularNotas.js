@@ -8,6 +8,13 @@ console.log(`Valor a ser decomposto - R$${valor}`)
 CalcularNotasCem(valor)
 console.log(`Notas de CEM utilizadas - ${cem}`)
 
+CalcularNotasCinquenta()
+console.log(`Notas de CINQUENTA utilizadas - ${cinquenta}`)
+
+CalcularNotasDez()
+console.log(`Notas de DEZ utilizadas - ${dez}`)
+
+
 
 
 function CalcularNotasCem(num1){
@@ -15,3 +22,12 @@ function CalcularNotasCem(num1){
     return sobraCinquenta = num1 - (100*cem)
 }
 
+function CalcularNotasCinquenta(){
+    cinquenta = parseInt(sobraCinquenta/50)
+    return sobraDez = sobraCinquenta - (50*cinquenta)
+}
+
+function CalcularNotasDez(){
+    dez = parseInt(sobraDez/10)
+    return sobraCinco = sobraCinquenta - (50*cinquenta)
+}
